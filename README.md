@@ -9,6 +9,14 @@ Icy Tower is a classic arcade game where the player's objective is to jump from 
 - Score tracking based on height reached.
 - Classic sound effects and background music.
 
+## Upcoming Improvements
+I'm excited to work on implementing the following improvements for the game:
+- Improve movement mechanics and physics.
+- Add new characters with unique sound effects.
+- Create additional levels with diverse challenges.
+- Enhance game visuals and animations.
+- Improve camera scroll for smoother gameplay.
+
 ## Prerequisites
 
 - Java JDK 8 or higher (required for both `.jar` and `.exe` versions). For installation instructions, see [INSTALL_JDK.md](INSTALL_JDK.md).
