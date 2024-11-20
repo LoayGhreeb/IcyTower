@@ -1,4 +1,7 @@
-import java.awt.*;
+package org.example;
+
+import java.awt.Graphics2D;
+import java.awt.Image;
 
 public class Platform extends Sprite {
     private final Image image;
@@ -12,7 +15,7 @@ public class Platform extends Sprite {
     }
 
     private void initBlock() {
-        width  = image.getWidth(null);
+        width = image.getWidth(null);
         height = image.getHeight(null);
 
         left = x;
@@ -21,17 +24,17 @@ public class Platform extends Sprite {
         bottom = y + height;
     }
 
-    public void move(){
-        //Floor always fall down
+    public void move() {
+        // Floor always fall down
         y++;
-
-        //Update floor bounders
+        // Update floor bounders
         top = y;
         bottom = y + height;
     }
-    public boolean collide (Player player) {
+
+    public boolean collide(Player player) {
         if (player.right >= left && player.left <= right && player.bottom == top) {
-            player.isFalling = false; //stop falling
+            player.isFalling = false; // stop falling
             return true;
         }
         return false;
